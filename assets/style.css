@@ -1,7 +1,17 @@
-h1 {
+/* h1 {
     display: flex;
     justify-content: center;
     font-size: 50px;
-    background-color: bisque;
-}
+    background-color: rgba(226, 223, 214, 1);;
+} */
+
+
+
+/* Color Theme Swatches in RGBA */
+.Apex-Legends-1 { color: rgba(184, 47, 56, 1); }
+.Apex-Legends-2 { color: rgba(163, 54, 61, 1); }
+.Apex-Legends-3 { color: rgba(249, 123, 45, 1); }
+.Apex-Legends-4 { color: rgba(226, 223, 214, 1); } /*assigned as background*/
+.Apex-Legends-5 { color: rgba(58, 63, 26, 1); }
+
 
