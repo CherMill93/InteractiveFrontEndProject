@@ -27,13 +27,28 @@ $(document).on('click', '#searchForUs', function(){
     console.log(response);
     // Name of the player
     console.log(response.global.name);
+    $("#name").text(response.global.name);
+
     // player level
     console.log(response.global.level);
+    $("#ourLevel").append(response.global.level);
+
     // Players rank
     console.log(response.global.rank.rankName);
+     $("#compRank").text(response.global.rank.rankName);
+
     // KD 
     console.log(response.total.kd.value);
+    $("#kd").append(response.total.kd.value);
+    
     // Total Kills
     console.log(response.total.kills.value);
+    $("#totalKills").append(response.total.kills.value);
+  });
+});
+
+$("#statsForUs").ready(function() {
+  $("#test1").click(function(){
+    $("p").text("hello");
   });
 });
