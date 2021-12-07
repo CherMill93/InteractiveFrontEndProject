@@ -16,16 +16,16 @@
   <!-- Enter Username -->
   <H1>NERD STATS!</H1>
   <div class="row">
-    <header class="col-6 col-lg-4 col-xs-12 bg-secondary text-light d-flex flex-column p-lg-3">
+    <div class="col-6 col-lg-4 col-xs-12 bg-secondary text-light d-flex flex-column p-lg-3">
       <h1 class="text-center"><span class="d-inline d-lg-none"></span>Get Stats</h1>
-      <input type="text" value="Enter Username for Twitch">
+      <input id="twitchUser" type="text" value="Enter Username for Twitch">
       <input id="playerName" type="text" value="Enter Username for Apex Legends">
-      <input id="userConsole" type="text" value="Enter Console">
+      <input id="userConsole" type="text" value="Enter Console(either X1,PS4,PC)">
       <button id="searchForUs">Search Apex Legends</button>
 
       <p> All your stats in one Place!</p>
 
-    </header>
+    </div>
 
 
     <!-- Stats column -->
@@ -42,10 +42,12 @@
         <br>
         <div>Total Kills:<span class="totalKills"></span></div>
         <br>
-        <div id="statsForUs">
-          <button id="test1"></button>
+        <section>
+          <h4>Twitch View Count</h4>
+        <div id="twitchViewCount">
           <p>Loading...</p>
         </div>
+      </section>
     </header>
   </div>
   </div>
