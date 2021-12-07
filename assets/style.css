@@ -1,11 +1,7 @@
-/* *{
-    background-color: rgba(226, 223, 214, 1);
-}  */
+*{
+    background-color: rgba(58, 63, 26, 1);
+} 
 
-/* .bg-image{
-    background-image: url(./Apex\ legends\ background\ image.png);
-    height: ;
-} */
 
 header {
     background-color:rgba(58, 63, 26, 1) ;
@@ -22,11 +18,20 @@ header img{
 
 div{
     background-color: rgba(58, 63, 26, 1);
-    margin-bottom: 0;
+    /* border-style: solid; */
 }
 
 input {
-    background-color:rgba(184, 47, 56, 1);
+    background-color:rgba(163, 54, 61, 1);
+}
+
+button{
+ background-color: rgba(249, 123, 45, 1);
+}
+
+#statCTA {
+    text-align: center;
+    color: rgba(226, 223, 214, 1);
 }
 
 /* Color Theme Swatches in RGBA */
