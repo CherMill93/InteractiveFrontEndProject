@@ -5,7 +5,8 @@
 // bttn function to look up code
 // $(document).on('click', '#searchForUs', function () { **was not needed keeping incase**
 $("#searchForUs").click(function () {
-  alert("button is clicked");
+  $('#mymodal').show()
+  // alert("button is clicked");
   var userNameEl = document.getElementById("playerName").value;
   var userConsoleEl = document.querySelector("#userConsole").value;
   var twitchUserEl = document.getElementById("twitchUser").value;
