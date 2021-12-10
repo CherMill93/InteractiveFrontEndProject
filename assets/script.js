@@ -54,8 +54,8 @@ $("#searchForUs").click(function () {
       $("#name").text(response.global.name);
       $("#ourLevel").text(playerLevel);
       $("#compRank").text(response.global.rank.rankName);
-      $("#kd").html(playerKd);
-      $("#totalKills").html(playerTotalKills);
+      $("#kd").text(playerKd);
+      $("#totalKills").text(playerTotalKills);
     }
   })
   $.ajax({    
