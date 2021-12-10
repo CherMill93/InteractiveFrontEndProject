@@ -10,7 +10,6 @@ $("#searchForUs").click(function () {
   var userConsoleEl = document.querySelector("#userConsole").value;
   var twitchUserEl = document.getElementById("twitchUser").value;
   console.log(userNameEl);
-  console.log(userConsoleEl);
   console.log(twitchUserEl);
   // var gamerTag = $(userNameEl);
   // console.log(gamerTag);
