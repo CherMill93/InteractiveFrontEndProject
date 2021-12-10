@@ -52,3 +52,10 @@ button{
 .Apex-Legends-5 { color: rgba(58, 63, 26, 1); }
 
 
+#mymodal {
+    flex: flex;
+    justify-content: center;
+    width: 50%;
+    height: 50%;
+    float: right;
+}
