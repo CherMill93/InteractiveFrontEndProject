@@ -5,11 +5,21 @@
 // bttn function to look up code
 // $(document).on('click', '#searchForUs', function () { **was not needed keeping incase**
 $("#searchForUs").click(function () {
+<<<<<<< HEAD
   $('#mymodal').show()
   // alert("button is clicked");
+=======
+  alert("button is clicked");
+  // var userConsoleEl = document.getElementsByName("btnradio").value;
+  
+  var userConsoleEl = $("input[name='btnradio']:checked").val();
+>>>>>>> feature/buttons
   var userNameEl = document.getElementById("playerName").value;
-  var userConsoleEl = document.querySelector("#userConsole").value;
   var twitchUserEl = document.getElementById("twitchUser").value;
+<<<<<<< HEAD
+=======
+  console.log(userConsoleEl);
+>>>>>>> feature/buttons
   console.log(userNameEl);
   console.log(twitchUserEl);
   // var gamerTag = $(userNameEl);

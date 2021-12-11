@@ -35,14 +35,14 @@
       <input type="text" id="playerName" class="col-6 mx-auto rounded" value="Enter Username for Apex Legends">
       
       <div class="btn-group col-6 mx-auto rounded" role="group" aria-label="Basic radio toggle button group">
-        <input type="radio" class="btn-check" name="btnradio" id="btnX1" autocomplete="off" checked>
-        <label class="btn Apex-Legends-1" for="btnradio1">X1</label>
+        <input type="radio" name="btnradio" id="btnX1" value="X1" autocomplete="off" >
+        <label class="btn Apex-Legends-1" for="btnradio1" >X1</label>
       
-        <input type="radio" class="btn-check" name="btnradio" id="btnPs4" autocomplete="off">
-        <label class="btn Apex-Legends-1" for="btnradio2">PS4</label>
+        <input type="radio" name="btnradio" id="btnPs4" value="PS4" autocomplete="off">
+        <label class="btn Apex-Legends-1" for="btnradio2" >PS4</label>
       
-        <input type="radio" class="btn-check" name="btnradio" id="btnPc" autocomplete="off">
-        <label class="btn Apex-Legends-1" for="btnradio3">PC</label>
+        <input type="radio"  name="btnradio" id="btnPc" value="PC" autocomplete="off">
+        <label class="btn Apex-Legends-1" for="btnradio3" >PC</label>
       </div>
       <!-- <input type="text" id="userConsole" class="col-6 mx-auto rounded" value="Enter Console"> -->
 
@@ -52,8 +52,14 @@
         <button type="button" class="btn col-6 mx-auto rounded-pill Apex-Legends-3">X1</button>
     </section> -->
 
+<!-- <<<<<<< HEAD
       <!-- <input type="text" id="userConsole" class="col-6 mx-auto rounded-pill" value="Enter Console"> -->
       <button id="searchForUs" type="button" class="btn col-6 mx-auto rounded-pill" data-bs-toggle="modal" data-bs-target="#mymodal">
+=======
+<<<<<<< HEAD -->
+      <input type="text" id="userConsole" class="col-6 mx-auto rounded" value="Enter Console">
+      <button id="searchForUs" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mymodal">
+>>>>>>> d59bf9a904b9352223455d17200e8e5343a78dad
         Get Stats
       </button>
       
@@ -71,6 +77,32 @@
             <br>
             <div id="modal-bg" class="Apex-Legends-4">Total Kills:<span class="totalKills"></span></div>
             <br>
+=======
+      <!-- <input type="text" id="userConsole" class="col-6 mx-auto rounded" value="Enter Console"> -->
+      <button class="col-6 mx-auto rounded-pill" id="searchForUs">Search Apex Legends</button>
+
+      <!-- <br>
+    <h3> All your stats in one Place!</h3> -->
+    </div>
+
+    <!-- Stats column -->
+    <div class="offset-4 col-xs-6 col-6 col-lg-4 d-flex flex-column Apex-Legends-5">
+      <!-- <div class="col"> -->
+      <br>
+      <h2 class="Apex-Legends-3" id="name">Player Name is loading...</h2>
+      <br>
+      <div class="Apex-Legends-4">Level:<span id="ourLevel"></div>
+      <br>
+      <div class="Apex-Legends-4">Comp Rank:<span id="compRank"></div>
+      <br>
+      <div class="Apex-Legends-4">KD:<span id="kd"></span></div>
+      <br>
+      <div class="Apex-Legends-4">Total Kills:<span id="totalKills"></span></div>
+      <section>
+        <h4>Twitch View Count</h4>
+        <div id="twitchViewCount">
+          <p>Loading...</p>
+>>>>>>> feature/buttons
         </div>
     </section> 
     </div>
