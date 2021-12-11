@@ -7,10 +7,6 @@
 } 
 
 
-header {
-    background-color:rgba(58, 63, 26, 1) ;
-}
-
 h1 {
     margin-top: 0;
     margin-bottom: -0.5rem;
@@ -26,10 +22,6 @@ header img{
     height: auto;
 }
 
-div{
-    background-color: rgba(58, 63, 26, 1);
-    /* border-style: solid; */
-}
 
 input {
     background-color:rgba(163, 54, 61, 1);
@@ -37,6 +29,10 @@ input {
 
 button{
  background-color: rgba(249, 123, 45, 1);
+}
+
+#searchForUs{
+    background-color: rgba(249, 123, 45, 1);
 }
 
 #statCTA {
@@ -56,3 +52,21 @@ button{
 .Apex-Legends-5 { color: rgba(58, 63, 26, 1); }
 
 
+#mymodal {
+    flex: flex;
+    justify-content: center;
+    max-width: 30%;
+    max-height: 30%;
+    /* float: right; */
+    background-color: rgba(163, 54, 61, 1);
+    top: 297px;
+    left: 560px;
+}
+
+#modal-bg{
+    background-color: rgba(163, 54, 61, 1);
+}
+
+#name{ /*colors the background of the 'Player Name is loading' div*/
+    background-color: rgba(163, 54, 61, 1);
+}

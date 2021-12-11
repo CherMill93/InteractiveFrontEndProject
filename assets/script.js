@@ -6,11 +6,13 @@
 // $(document).on('click', '#searchForUs', function () { **was not needed keeping incase**
 $("#searchForUs").click(function () {
   alert("button is clicked");
+  // var userConsoleEl = document.getElementsByName("btnradio").value;
+  
+  var userConsoleEl = $("input[name='btnradio']:checked").val();
   var userNameEl = document.getElementById("playerName").value;
-  var userConsoleEl = document.querySelector("#userConsole").value;
   var twitchUserEl = document.getElementById("twitchUser").value;
-  console.log(userNameEl);
   console.log(userConsoleEl);
+  console.log(userNameEl);
   console.log(twitchUserEl);
   // var gamerTag = $(userNameEl);
   // console.log(gamerTag);
