@@ -57,10 +57,18 @@ button{
     justify-content: center;
     max-width: 30%;
     max-height: 30%;
+    max-width:calc(100% - 80px);
+     max-height:calc(50% - 80px);
     /* float: right; */
     background-color: rgba(163, 54, 61, 1);
-    top: 297px;
-    left: 560px;
+    /* top: 320px;
+    left: 632px; */
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    box-sizing:border-box;
+    width:600px;
 }
 
 #modal-bg{
