@@ -1,4 +1,4 @@
-// bttn function to look up code
+// bttn function to look up APEX STATS
 $("#searchForUs").click(function () {
   alert("button is clicked");
   
@@ -70,7 +70,8 @@ $("#searchForUs").click(function () {
     }
   })
 });
-// bttn function to look up code for apex
+
+// bttn function to look up code for TWITCH STATS
 $("#twitchInfo").click(function () {
   alert("twitch button is clicked");
 
@@ -97,3 +98,21 @@ $("#twitchInfo").click(function () {
   }
 })
 });
+
+// retrieve previous searchs of apex legends
+// JSON.parse apex stats
+var previousApexStats = JSON.parse(window.localStorage.getItem("player"))
+console.log(previousApexStats);
+// apend apex stats to html
+
+// post result into html page to display stats of players
+$("#name").text(previousApexStats.name);
+$("#ourLevel").text(previousApexStats.level);
+$("#compRank").text(previousApexStats.rank);
+$("#kd").text(previousApexStats.kd);
+$("#totalKills").text(previousApexStats.kills);
+
+// retrieve twitch user
+// JSON.parse twitch info
+// append the data to 
+
