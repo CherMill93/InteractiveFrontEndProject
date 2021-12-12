@@ -1,0 +1,81 @@
+*{
+    background-color: rgba(58, 63, 26, 1);
+    font-family: 'Lato', sans-serif;
+    font-family: 'Merriweather', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Staatliches', cursive;
+} 
+
+
+h1 {
+    margin-top: 0;
+    margin-bottom: -0.5rem;
+    font-weight: 500;
+    line-height: 2.2;
+}
+
+header img{
+    display: block;
+    margin: auto;
+    margin-bottom: -0.5rem;
+    width: 35%;
+    height: auto;
+}
+
+
+input {
+    background-color:rgba(163, 54, 61, 1);
+}
+
+button{
+ background-color: rgba(249, 123, 45, 1);
+}
+
+#searchForUs{
+    background-color: rgba(249, 123, 45, 1);
+}
+
+#statCTA {
+    text-align: center;
+    color: rgba(226, 223, 214, 1);
+}
+
+.btnradio1 {
+    background-color: rgba(249, 123, 45, 1);
+}
+
+
+/* Color Theme Swatches in RGBA */
+.Apex-Legends-1 { color: rgba(184, 47, 56, 1); }
+.Apex-Legends-2 { color: rgba(163, 54, 61, 1); }
+.Apex-Legends-3 { color: rgba(249, 123, 45, 1); }
+.Apex-Legends-4 { color: rgba(226, 223, 214, 1); }
+.Apex-Legends-5 { color: rgba(58, 63, 26, 1); }
+
+
+#mymodal {
+    flex: flex;
+    justify-content: center;
+    max-width: 30%;
+    max-height: 30%;
+    max-width:calc(100% - 80px);
+     max-height:calc(50% - 80px);
+    /* float: right; */
+    background-color: rgba(163, 54, 61, 1);
+    /* top: 320px;
+    left: 632px; */
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    box-sizing:border-box;
+    width:600px;
+}
+
+#modal-bg{
+    background-color: rgba(163, 54, 61, 1);
+}
+
+#name{ /*colors the background of the 'Player Name is loading' div*/
+    background-color: rgba(163, 54, 61, 1);
+}

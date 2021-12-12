@@ -1,49 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/style.css">
-    <title>APEX LEGENDS</title>
 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;700&family=Staatliches&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./assets/CSS/style.css">
+  <title>APEX LEGENDS</title>
 </head>
+
 <body>
-    <!-- Enter Username -->
-    <H1>NERD STATS!</H1>
-    <div class="row">
-        <header class="col-6 col-lg-4 col-xs-12 bg-secondary text-light d-flex flex-column p-lg-3">
-    <h1 class="text-center"><span class="d-inline d-lg-none"></span>Get Stats</h1>
-        <input type="text" value="Enter Username for Twitch">
-        <button>Search Twitch</button>
-        <input type="text" value="Enter Username for Apex Legends">
-        <button>Search Apex Legends</button>
-         <input type="text" value="Enter Console">
-        <button>Console</button>
-          
-    <p> All your stats in one Place!</p>
+  <header>
+    <img src="./assets/photos/Apex legends background image.png" alt="APEX character pic">
+    <h1 class="Apex-Legends-2 text-center">STATS FOR LEGENDARY NERDS!</h1>
+  </header>
+  <aside>
+    <section>
+      <h3 id="previousName">loading Previous Search...</h3><br>
+      <code id="previousLevel">level</code><br>
+      <code id="previousRank">Rank</code><br>
+      <code id="previousKd">kd</code><br>
+      <code id="previousKills">kills</code>
+    </section>
+  </aside>
+
+  <div class="row">
+    <div class="col-6 col-lg-4 col-xs-12 d-flex flex-column rounded-start">
+      <h2 class="text-center Apex-Legends-3"><span class="d-inline d-lg-none"></span>Get Stats</h2>
+      <!-- ENTER USER NAME -->
+      <input type="text" id="playerName" class="col-6 mx-auto rounded" value="Enter Username for Apex Legends">
+      <!--RADIO FOR CONSOLE-->
+      <section class="btn-group col-6 mx-auto rounded" role="group" aria-label="Basic radio toggle button group">
+        <input type="radio" name="btnradio" id="btnX1" autocomplete="off" value="X1">
+        <label class="btn Apex-Legends-1" for="btnradio1">X1</label>
+
+        <input type="radio" name="btnradio" id="btnPs4" autocomplete="off">
+        <label class="btn Apex-Legends-1" for="btnradio2">PS4</label>
+
+        <input type="radio" name="btnradio" id="btnPc" autocomplete="off">
+        <label class="btn Apex-Legends-1" for="btnradio3">PC</label>
+      </section>
+      <!--SUBMIT BUTTON FOR APEX-->
+      <button id="searchForUs" type="button" class="btn col-6 mx-auto rounded-pill" data-bs-toggle="modal" data-bs-target="#mymodal"> Get Stats </button>
       
-        </header>
-        
-   
-        <!-- Stats column -->
-    <header class ="offset-4 col-xs-6 col-6 col-lg-4 bg-secondary d-flex flex-column">
-    <div class="col">
-            <br>
-        <h1>Player Stats</h1>
         <br>
-        <div>Total Damage</div>
-        <br>
-        <div>Head Shots</div>
-        <br>
-        <div>Kills</div>
-        <br>
-        <div>Kills as Leader</div>
-    </header>
+      <!--USERNAME FOR TWITCH-->
+      <input type="text" id="twitchUser" class="col-6 mx-auto rounded" value="Enter Username for Twitch">
+      <!--SEARCH BUTTON FOR TWITCH-->
+      <button class="col-6 mx-auto rounded-pill" id="twitchInfo">Search Twitch</button>
+
+      <!--Data from API CALL WILL BE LISTED HERE-->
+      <section id="mymodal" tabindex="-1" class="modal fade rounded" role="dialog">
+        <div id="modal-bg" class="modal-dialog">
+          <span id="modal-bg" class="closeBtn">&times;</span>
+          <br>
+          <h2 id="name" class="Apex-Legends-4">Player Name is loading...</h2>
+          <br>
+          <div id="modal-bg" class="Apex-Legends-4">Level:<span id="ourLevel"></div>
+          <br>
+          <div id="modal-bg" class="Apex-Legends-4">Comp Rank:<span id="compRank"></span></div>
+          <br>
+          <div id="modal-bg" class="Apex-Legends-4">KD:<span id="kd"></span></div>
+          <br>
+          <div id="modal-bg" class="Apex-Legends-4">Total Kills:<span id="totalKills"></span></div>
+          <br>
+        </div>
+      </section>
     </div>
-    </div>
-    </div>
+    <h1 id="statCTA"> All your stats in one Place!</h1>
+  </div>
+  <!--TWITCH SECTION-->
+  <section>
+    <h4>Twitch View Count</h4>
+    <div id="twitchUser">Please Wait</div>
+    <br>
+    <div id="twitchViewCount"><p>Loading...</p></div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <script src="./assets/Javascript/script.js"></script>
 
 </body>
+
 </html>
