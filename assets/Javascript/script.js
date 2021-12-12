@@ -2,6 +2,7 @@
 $("#searchForUs").click(function () {
   alert("button is clicked");
   localStorage.clear("player")
+  
   // retrieving the console name from the radio buttons.
   var userConsoleEl = $("input[name='btnradio']:checked").val();
   console.log(userConsoleEl);
