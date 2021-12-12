@@ -1,7 +1,7 @@
 // bttn function to look up APEX STATS
 $("#searchForUs").click(function () {
   alert("button is clicked");
-  
+  localStorage.clear("player")
   // retrieving the console name from the radio buttons.
   var userConsoleEl = $("input[name='btnradio']:checked").val();
   console.log(userConsoleEl);
@@ -94,6 +94,7 @@ $("#twitchInfo").click(function () {
   success: function (response) {
     console.log(response);
     console.log(response.view_count);
+    $("#twitchUser").text(twitchUserEl.value)
     $("#twitchViewCount").text(response.view_count)
   }
 })
@@ -105,15 +106,12 @@ var startUp = function(){
 var previousApexStats = JSON.parse(window.localStorage.getItem("player"))
 console.log(previousApexStats);
 // apend apex stats to html
-
+var pLevel = previousApexStats.level;
 // post result into html page to display stats of players
 $("#previousName").text(previousApexStats.name);
-previousApexStats
-$("#previousLevel").text(previousApexStats.level);
-console.log(previousApexStats.level)
-console.log(previousApexStats.kd)
+$("#previousLevel").text(pLevel);
 $("#previousRank").text(previousApexStats.rank);
-$("#previouskd").text(previousApexStats.kd);
+$("#previousKd").text(previousApexStats.kd);
 $("#previousKills").text(previousApexStats.kills);
 
 // retrieve twitch user
