@@ -19,7 +19,7 @@ $("#searchForUs").click(function () {
   //need to get value of this gamer console (aka X1,PS4,PC)
   // var userConsole = $(userConsoleEl);
   // console.log(userConsole)
-  var gamerUrl = "https://apex-legends.p.rapidapi.com/stats/" + userNameEl + "/" +userConsoleEl;
+  var gamerUrl = "https://apex-legends.p.rapidapi.com/stats/" + userNameEl + "/" + userConsoleEl;
   var twitchPop = "https://twitch-advanced.p.rapidapi.com/getUserDataByUsername/" + twitchUserEl;
   // when button is clicked this will call on settingsApex**not needed just kept here incase**
   // $.ajax(settingsApex).done(function (response) {**not needed just kept here incase**
@@ -36,7 +36,9 @@ $("#searchForUs").click(function () {
     success: function (response) {
       // retrieve data recieved from api call
       console.log(response);
+      var playerName = response.global.name;
       var playerLevel = response.global.level;
+      var playerRank = response.global.rank.rankName;
       var playerKd = response.total.kd.value;
       var playerTotalKills = response.total.kills.value;
 
@@ -52,11 +54,14 @@ $("#searchForUs").click(function () {
       console.log(response.total.kills.value);
 
       // post result into html page to display stats of players
-      $("#name").text(response.global.name);
+      $("#name").text(playerName);
       $("#ourLevel").text(playerLevel);
-      $("#compRank").text(response.global.rank.rankName);
+      $("#compRank").text(playerRank);
       $("#kd").text(playerKd);
       $("#totalKills").text(playerTotalKills);
+      //save user info into a var 
+
+      // store the value in local storage
     }
   })
   $.ajax({    
