@@ -101,18 +101,23 @@ $("#twitchInfo").click(function () {
 
 // retrieve previous searchs of apex legends
 // JSON.parse apex stats
+var startUp = function(){
 var previousApexStats = JSON.parse(window.localStorage.getItem("player"))
 console.log(previousApexStats);
 // apend apex stats to html
 
 // post result into html page to display stats of players
-$("#name").text(previousApexStats.name);
-$("#ourLevel").text(previousApexStats.level);
-$("#compRank").text(previousApexStats.rank);
-$("#kd").text(previousApexStats.kd);
-$("#totalKills").text(previousApexStats.kills);
+$("#previousName").text(previousApexStats.name);
+$("#previousLevel").text(previousApexStats.level);
+console.log(previousApexStats.level)
+console.log(previousApexStats.kd)
+$("#previousRank").text(previousApexStats.rank);
+$("#previouskd").text(previousApexStats.kd);
+$("#previousKills").text(previousApexStats.kills);
 
 // retrieve twitch user
 // JSON.parse twitch info
 // append the data to 
 
+}
+startUp();
