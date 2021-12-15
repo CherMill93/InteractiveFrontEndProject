@@ -95,8 +95,9 @@ $("#twitchInfo").click(function () {
   success: function (response) {
     console.log(response);
     console.log(response.view_count);
-    $("#twitchUser").text(twitchUserEl.value)
-    $("#twitchViewCount").text(response.view_count)
+    console.log(response.display_name);
+    $("#twitchUserN").text(response.display_name);
+    $("#twitchViewCount").text(response.view_count);
   }
 })
 });
